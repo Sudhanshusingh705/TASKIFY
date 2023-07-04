@@ -10,7 +10,7 @@ const app = express();
 const PORT = APP_PORT;
 
 async function main() {
-  await mongoose.connect(MONGO_URI);
+  await mongoose.connect(mongodb+srv://SUDHANSHU:Sudh2002@cluster0.6wqffyv.mongodb.net/taskify);
 }
 main();
 
