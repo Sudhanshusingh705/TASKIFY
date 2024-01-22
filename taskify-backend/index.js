@@ -10,7 +10,7 @@ const app = express();
 const PORT = APP_PORT;
 
 async function main() {
-  await mongoose.connect(mongodb+srv://SUDHANSHU:Sudh2002@cluster0.6wqffyv.mongodb.net/taskify);
+  await mongoose.connect('mongodb+srv://SUDHANSHU:Sudh2002@cluster0.6wqffyv.mongodb.net/taskify');
 }
 main();
 
@@ -25,5 +25,5 @@ app.use("/api", collectionRoute);
 app.use("/api", taskRoute);
 app.use(errrorHandler);
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`);
+  console.log(`App listening on port ${PORT}`);
 });
