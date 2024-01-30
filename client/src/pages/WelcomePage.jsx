@@ -15,7 +15,7 @@ const WelcomePage = () => {
 
             <p className="">and stay on track with </p>
           </div>
-          <div className=" text-6xl font-bold text-yellow-300 ">Taskify</div>
+          <div className=" text-6xl font-bold text-yellow-300 ">Dev Town Task</div>
         </div>
         <Link to="login">
           {" "}
